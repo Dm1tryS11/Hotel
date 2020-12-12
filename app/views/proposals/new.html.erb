@@ -1,0 +1,29 @@
+<section class="contact-section spad">
+    <div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-8">
+                <div class="info-box">
+                    <h1><%= t'.new'%></h1><br/>
+                    <%= form_for @proposal do |f| %>
+                        <%= f.label t('.name') %><br/>
+                        <%= f.text_field :name %><br/><br/>
+                        <%= f.label t('.passport') %><br/>
+                        <%= f.text_field :passport%><br/><br/>
+                        <%= f.label t('.email')  %><br/>
+                        <%= f.text_field :email%><br/><br/>
+                        <%= f.label t('.arrival')  %><br/>
+                        <%= f.date_select :arrival%><br/><br/>
+                        <%= f.label t('.departure')  %><br/>
+                        <%= f.date_select :departure%><br/><br/>
+                        <%= f.submit t('.create')  %><br/>
+                    <% end %><br/>
+                    <%= button_to t('.menu'), root_path, method: :get%> 
+                </div>
+            </div>
+            
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</section>

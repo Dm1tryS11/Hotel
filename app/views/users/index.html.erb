@@ -1,0 +1,42 @@
+<section class="contact-section spad">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-2"></div>
+
+      <div class="col-lg-8">
+        <div class="info-box">
+          <p id="notice"><%= notice %></p>
+
+          <h1><%= t('.users')%></h1><br/>
+
+          <table border="1px", align="center" >
+            <thead>
+              <tr>
+                <th><%= t('.email')%></th>
+                <th><%= t('.password')%></th>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <% @users.each do |user| %>
+                <tr>
+                  <td><%= user.email %></td>
+                  <td><%= "*****" %></td>
+                  <td><%= button_to t('.edit'), edit_user_path(user), method: :get %></td>
+                      <td><%= button_to t('.destroy'), user, method: :delete, data: { confirm: t('.sure') } %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table> <br>
+          
+          <%= button_to t('.back'), session_acc_path, method: :get %>
+        </div>
+      </div>
+          
+      <div class="col-lg-2"></div>
+      
+    </div>
+  </div>
+</section>

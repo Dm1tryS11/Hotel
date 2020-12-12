@@ -1,0 +1,41 @@
+<section class="contact-section spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+        <div class="info-box", style="background-color:#FFFFFF">           
+            <p>
+              <strong><%= t('.name')%>:</strong>
+              <%= @proposal.name %>
+            </p>
+
+            <p>
+              <strong><%= t('.passport')%>:</strong>
+              <%= @proposal.passport %>
+            </p>
+
+            <p>
+              <strong><%= t('.email')%>:</strong>
+              <%= @proposal.email %>
+            </p>
+
+            <p>
+              <strong><%= t('.arrival')%>:</strong>
+              <%= @proposal.arrival %>
+            </p>
+
+            <p>
+              <strong><%= t('.departure')%>:</strong>
+              <%= @proposal.departure %>
+            </p>
+
+            <p>
+              <strong><%= t('.accept')%>:</strong>
+              <%= @proposal.accept %>
+            </p>
+
+            <%= button_to t('.back'), proposals_path, method: :get %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

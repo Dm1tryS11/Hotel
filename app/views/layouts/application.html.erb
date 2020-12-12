@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Europa</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+
+
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="inner-header">
+                <div class="logo">
+                    <%= link_to image_tag("/img/logo.png"), root_path%>
+                </div>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+
+
+  <%= yield %>
+  
+  
+  <footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+              <div class="footer-item">
+              
+                  <div class="footer-logo">
+                      <p><img src="/img/logo.png"></p>
+                  </div>
+                <p><%= t '.motto'%></p>
+
+              </div>
+            </div>
+
+
+            <div class="col-lg-7">
+                <div class="footer-item">
+                <div align="center">
+                    <h5><%= t '.language'%></h5>                
+                    <li><%= link_to 'English', {locale: :en} %></li>
+                    <li><%= link_to 'Русский', {locale: :ru}%></li>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="footer-item">
+                <div align="right">
+                  <h5><%= t '.contact'%></h5>
+                  <ul>
+                      <li><img src="/img/placeholder.png">1525 Boring Lane,<br />Los Angeles, CA</li>
+                      <li><img src="/img/phone.png">+1 (603)535-4592</li>
+                  </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Js Plugins -->
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/jquery.nice-select.min.js"></script>
+    <script src="/js/jquery.slicknav.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</html>

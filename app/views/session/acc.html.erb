@@ -1,0 +1,20 @@
+<section class="contact-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            
+            <div class="col-lg">
+                <div class="info-box">
+                    <h1><%= t '.admin'%></h1><br>
+                    <h2><%= t '.hello'%> <%=current_user.email%>!</h2><br/><br/>
+                    <%= button_to t('.menu'), root_path, method: :get %><br>
+                    <%= button_to t('.allusers'), users_path, method: :get %><br>
+                    <%= button_to t('.applic'), proposals_path, method: :get %><br>
+                    <%= button_to t('.logout'), session_logout_path, method: :get %><br>
+                </div>
+            </div>
+            
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</section>

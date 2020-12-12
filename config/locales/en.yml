@@ -1,0 +1,165 @@
+en:
+  global:
+    forms:
+      reg: "Sign Up"
+      edit: "Edit"
+
+
+  layouts:
+    application:
+      motto: "Welcome to Europa Hotel, and we hope 
+             That you will take with you a memory that you can share with others."
+      contact: "Contact info"
+      language: "Language"
+      
+  date:
+    order: ["day","month","year"] 
+
+  session:
+    index:
+      makeapplication: "Make application"
+      admin: "Admin"
+      applications: "Applications"
+      home: "Home"
+      about: "About"
+      rooms: "Rooms"
+      contact: "Contact"
+      maintext1: "A Luxury Stay"
+      maintext2: "A memorable holidays"
+      maintext3: "A great stay in a"
+      maintext4: "lovely hotel."
+      info1: "We will be happy to welcome You as our guest at Europa Hotel and offer you to experience the hospitality at its best.
+             Our qualified staff is ready to create all the conditions that meet Your expectations. Our team strives to anticipate all your wishes, constantly and tirelessly improving the level and standards of our service.
+             Whether you are on a business trip, on vacation or traveling, you can always truly relax, unwind and enjoy the wide range of services offered by our hotel. Our attentive staff is always at Your service 24 hours a day.
+             We deeply hope that You will be satisfied with our service and services." 
+      info2: "Thank you for your attention and your choice.
+              We want You to know that we appreciate the opportunity to offer our services and will always be happy to welcome You to our hotel!"
+      room1: "Luxury Room"
+      room2: "From $399"
+      room3: "Pool"
+      room4: "For all our guests"
+
+    rooms:
+      makeapplication: "Make application"
+      admin: "Admin"
+      applications: "Applications"
+      home: "Home"
+      about: "About"
+      rooms: "Rooms"
+      contact: "Contact"
+      maintext1: "A memorable holidays"
+      deluxe: "Deluxe Suite"
+      tv: "Smart TV"
+      pool: "Pool"
+      ac: "AC"
+      parking: "Parking"
+      wifi: "Wi-Fi"
+      twinsea: "Twin Room With Seaview"
+      double: "Double Room"
+      doublesea: "Twin Room With Seaview"
+
+    aboutus:
+      makeapplication: "Make application"
+      admin: "Admin"
+      applications: "Applications"
+      home: "Home"
+      about: "About"
+      rooms: "Rooms"
+      contact: "Contact"
+      maintext1: "A memorable holidays"
+      maintext2: "A great stay in a"
+      maintext3: "lovely hotel."
+      info1: "The hotel consists of 5 apartment hotels and 6 gourmet Boulevard villas with total built up area of 115 000 sq. m.
+              Four outdoor pools, two pool bars, water attractions, located on more than 3 500 sq m
+              indoor swimming pool, an artificial river that meanders among the green areas with exotic trees and flower beds, children's water slides, cafes and cocktail - bars, restaurants, Relaxation and Wellness -
+              the center, multi-functional gym, sports facilities, bowling alley, shops, children's club, beauty salon, underground garage and external Parking, all this makes Europa a refined European resort with the necessary amenities for a first-class holiday."
+      info2: "Welcome to Europa Hotel, and we hope 
+             That you will take with you a memory that you can share with others."
+
+    contact:
+      makeapplication: "Make application"
+      admin: "Admin"
+      applications: "Applications"
+      home: "Home"
+      about: "About"
+      rooms: "Rooms"
+      contact: "Contact"
+
+    login:
+      signin: "Sign In"  
+      email: "Email"
+      password: "Password"
+      back: "Back"
+      signup: "Sign Up"        
+
+    acc:
+      admin: "Admin"
+      hello: "Hello,"
+      logout: "LogOut"
+      applic: "Applications"
+      menu: "Menu"
+      allusers: "Admins"
+
+  users:
+    new:
+      back: "Back"
+      new: "Registration"  
+
+    index:
+      email: "Email"
+      users: "Admins"
+      password: "Password"  
+      back: "Back"
+      edit: "Edit"
+      destroy: "Delete"
+      sure: "Are you sure?"
+
+    edit:
+      edit: "Editing"    
+      back: "Back"
+
+    show:
+      back: "Back"
+      password: "Password:"
+      email: "Email:"         
+  
+  proposals:
+    index:
+      application: "Applications"
+      name: "Name"
+      passport: "Passport"
+      email: "Email"
+      arrival: "Arrival"
+      departure: "Departure"
+      accept: "Accept"
+      back: "Back"
+      edit: "Edit"
+      destroy: "Delete"
+      sure: "Are you sure?"
+      menu: "Menu"   
+      allowed: "Allowed"
+      waiting: "Waiting..."
+      denied: "Denied"
+
+    new: 
+      new: "New application"
+      name: "Name"
+      passport: "Passport"
+      email: "Email"
+      arrival: "Arrival"
+      departure: "Departure"
+      create: "Create"
+      menu: "Menu"      
+          
+    edit:
+      edit: "Editing"    
+      back: "Back"
+
+    show:
+      name: "Name"
+      passport: "Passport"
+      email: "Email"
+      arrival: "Arrival"
+      departure: "Departure"
+      accept: "Accept"
+      back: "Back"      

@@ -1,0 +1,80 @@
+<!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="inner-header">
+
+                <div class="logo">
+                    <%= link_to image_tag("/img/logo.png"), root_path%>
+                </div>
+
+                <div class="nav-right">
+                    <%= link_to t('.makeapplication'), new_proposal_path,  class: "primary-btn"%>
+                    <%= link_to t('.admin'), session_acc_path, class: "primary-btn"%>
+                    <%= link_to t('.applications'), proposals_path, class: "primary-btn"%>
+                </div>
+
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li><%= link_to t('.home'), session_index_path%></a></li>
+                        <li class="active"><%= link_to t('.about'), session_aboutus_path%></li>
+                        <li><%= link_to t('.rooms'), session_rooms_path%></li>
+                        <li><%= link_to t('.contact'), session_contact_path%></li>
+                    </ul>
+                </nav>
+                
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+<!-- Header End -->
+
+<!-- Hero Area Section Begin -->
+    <div class="hero-area set-bg other-page" data-setbg="/img/about_bg.jpg"></div>
+<!-- Hero Area Section End -->
+
+<!-- About Us Section Begin -->
+    <section class="about-us spad">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-7">
+                    <div class="about-left">
+                        <div class="section-title">
+                            <span><%= t '.maintext1' %></span>
+                            <h2><%= t '.maintext2' %> <br /><%= t '.maintext3' %></h2>
+                        </div>
+                        <p class="second-text"><%= t '.info1'%></p>
+                        <p><%= t '.info2'%></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-7">
+                            <div class="about-img">
+                                <img src="/img/about/about-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="about-img second-img">
+                                <img src="/img/about/about-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5">
+                            <div class="about-img third-img">
+                                <img src="/img/about/about-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7">
+                            <div class="about-img">
+                                <img src="/img/about/about-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- About Us Section End -->

@@ -1,0 +1,41 @@
+<%= form_with(model: proposal, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :passport %><br>
+    <%= form.text_field :passport %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :arrival%><br>
+    <%= form.date_select :arrival%>
+  </div>
+
+  <div class="field">
+    <%= form.label :departure %><br>
+    <%= form.date_select :departure %>
+  </div>
+  <br>
+
+  <% if current_user%>
+    <div class="field" checked="false"
+      <%= form.label :accept %>
+      <%= form.check_box :accept%>
+    </div>
+    <br/>
+  <% end%>
+
+  <div class="actions">
+    <%= form.submit t('global.forms.edit') %>
+  </div>
+  
+<% end %>

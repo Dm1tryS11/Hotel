@@ -1,0 +1,15 @@
+<section class="contact-section spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+        <div class="info-box", style="background-color:#F9AD81">
+
+          <h1><%= t('.edit')%></h1><br/>
+          <%= render 'form', proposal: @proposal %><br/>
+          <%= button_to (t'.back'), proposals_path, method: :get %>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,62 @@
+<section class="contact-section spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+        <div class="info-box", style="background-color:#F9AD81">
+
+          <h1><%= t'.application'%></h1><br/>
+
+          <table border = '1px', align="center">
+            <thead>
+              <tr>
+                <th><%= t('.name')%></th>
+                <th><%= t('.passport')%></th>
+                <th><%= t('.email')%></th>
+                <th><%= t('.arrival')%></th>
+                <th><%= t('.departure')%></th>
+                <th><%= t('.accept')%></th>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <% @proposals.each do |proposal| %>
+                <tr>
+                  <td><%= proposal.name %></td>
+
+                  <% if current_user%>
+                    <td><%= proposal.passport %></td>
+                    <td><%= proposal.email %></td>
+                    <td><%= proposal.arrival %></td>
+                    <td><%= proposal.departure %></td>
+                  <%else%>
+                    <td><%="*****"%></td>
+                    <td><%="*****"%></td>
+                    <td><%="*****"%></td>
+                    <td><%="*****"%></td>                      
+                  <% end%>
+
+                  <td><%= if proposal.accept==false
+                            t(".denied")
+                          elsif proposal.accept==true
+                            t(".allowed")
+                          else
+                            t(".waiting")
+                          end%>
+                  </td>
+
+                  <td><%= button_to t('.edit'), edit_proposal_path(proposal), method: :get %></td>
+                  <td><%= button_to t('.destroy'), proposal, method: :delete, data: { confirm: t(".sure") } %></td>
+                </tr>
+              <% end %>
+                
+            </tbody>
+          </table><br>
+
+          <%= button_to t('.menu'), root_path, method: :get %><br>
+
+        </div>
+      </div>      
+    </div>
+  </div>
+</section>
