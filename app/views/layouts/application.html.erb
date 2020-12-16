@@ -20,6 +20,33 @@
     <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+    <script type="text/javascript"> 
+
+        function zero_first_format(value)
+        {
+            if (value < 10)
+            {
+            value='0'+value;
+            }
+            return value;
+        }
+
+        function date_time()
+        {
+            var current_datetime = new Date();
+            var hours = zero_first_format(current_datetime.getHours());
+            var minutes = zero_first_format(current_datetime.getMinutes());
+            var seconds = zero_first_format(current_datetime.getSeconds());
+        
+            return hours+":"+minutes+":"+seconds;
+        }
+
+        setInterval(function()
+        {
+            document.getElementById("time").innerHTML = date_time();
+        }, 1000);
+    </script>
 </head>
 
 <body>
@@ -60,7 +87,8 @@
                 <div align="center">
                     <h5><%= t '.language'%></h5>                
                     <li><%= link_to 'English', {locale: :en} %></li>
-                    <li><%= link_to 'Русский', {locale: :ru}%></li>
+                    <li><%= link_to 'Русский', {locale: :ru}%></li></br>
+                    <h5><div id="time"></div></h5>
                 </div>
                 </div>
             </div>
