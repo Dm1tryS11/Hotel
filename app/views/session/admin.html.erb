@@ -6,11 +6,12 @@
             <div class="col-lg">
                 <div class="info-box">
                     <h1><%= t '.account'%></h1><br>
-                    <h2><%= t '.hello'%> <%=current_user.email%>!</h2><br/><br/>
-                    <%= button_to t('.menu'), root_path, method: :get %><br>
-                    <%= button_to t('.create'), new_proposal_path, method: :get %><br>
+                    <h2><%= t '.hello'%> <%=current_admin.name%>!</h2><br/><br/>
+                    <%= button_to  t('.menu'), root_path, method: :get %><br>
                     <%= button_to t('.applic'), proposals_path, method: :get %><br>
-                    <%= button_to t('.logout'), session_logout_path, method: :get %><br>
+                    <%= button_to t('.users'), users_path, method: :get %><br>
+                    <%= button_to t('.admins'), admins_path, method: :get %><br>
+                    <%= button_to t('.logout'), session_logoutadmin_path, method: :get %><br>
                 </div>
             </div>
             

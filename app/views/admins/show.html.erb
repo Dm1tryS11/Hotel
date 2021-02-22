@@ -1,0 +1,30 @@
+<section class="contact-section spad">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-2"></div>
+
+      <div class="col-lg-8">
+        <div class="info-box"><p>
+          <strong><%= t('.name')%></strong>
+          <%= @admin.name %>
+        </p>
+
+        <p>
+          <strong><%= t('.password')%></strong>
+          <%= "*****" %>
+        </p>
+
+        <p>
+          <strong><%= t('.key')%></strong>
+          <%= "*****" %>
+        </p>
+        <%= button_to t('.back'), admins_path, method: :get%>
+        </div>
+      </div>
+                    
+      <div class="col-lg-2"></div>
+
+    </div>
+  </div>
+</section>

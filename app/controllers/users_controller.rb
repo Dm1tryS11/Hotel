@@ -3,6 +3,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i[show edit update destroy]
 
+  skip_before_action :require_admin_login, only: %i[create new]
+
   # GET /users
   # GET /users.json
   def index

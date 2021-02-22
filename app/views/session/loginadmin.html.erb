@@ -1,0 +1,25 @@
+<section class="contact-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            
+            <div class="col-lg-8">
+                <div class="info-box">
+                    <h1><%=t('.signin')%></h1><br>
+                    <%= form_tag url_for(controller: :session, action: :createadmin), method: 'post' do %>
+                        <%= label_tag t('.name') %> <br>
+                        <%= text_field_tag :name %><br/><br/>                    
+                        <%= label_tag t('.password') %> <br>
+                        <%= password_field_tag :password %><br/><br/>
+                        <%= submit_tag t('.bsignin') %><br>                   
+                    <% end %><br>   
+
+                    <p><%= flash[:error] %></p>
+                    <%= button_to t('.menu'), root_path, method: :get %><br
+                </div>
+            </div>
+            
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</section>

@@ -6,7 +6,6 @@
 
       <div class="col-lg-8">
         <div class="info-box">
-          <p id="notice"><%= notice %></p>
 
           <h1><%= t('.users')%></h1><br/>
 
@@ -25,13 +24,13 @@
                   <td><%= user.email %></td>
                   <td><%= "*****" %></td>
                   <td><%= button_to t('.edit'), edit_user_path(user), method: :get %></td>
-                      <td><%= button_to t('.destroy'), user, method: :delete, data: { confirm: t('.sure') } %></td>
+                  <td><%= button_to t('.destroy'), user, method: :delete, data: { confirm: t('.sure') } %></td>
                 </tr>
               <% end %>
             </tbody>
           </table> <br>
           
-          <%= button_to t('.back'), session_acc_path, method: :get %>
+          <%= button_to t('.back'), session_admin_path, method: :get %>
         </div>
       </div>
           

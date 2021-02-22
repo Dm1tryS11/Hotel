@@ -17,7 +17,7 @@
 
 
   <div class="actions">
-    <% if current_user%>
+    <% if current_admin%>
       <%= form.submit t('global.forms.edit')%>
     <% else %>
       <%= form.submit t('global.forms.reg')%>

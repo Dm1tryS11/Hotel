@@ -18,7 +18,7 @@ en:
   session:
     index:
       makeapplication: "Make application"
-      admin: "Admin"
+      account: "Account"
       applications: "Applications"
       home: "Home"
       about: "About"
@@ -41,7 +41,7 @@ en:
 
     rooms:
       makeapplication: "Make application"
-      admin: "Admin"
+      account: "Account"
       applications: "Applications"
       home: "Home"
       about: "About"
@@ -60,7 +60,7 @@ en:
 
     aboutus:
       makeapplication: "Make application"
-      admin: "Admin"
+      account: "Account"
       applications: "Applications"
       home: "Home"
       about: "About"
@@ -78,7 +78,7 @@ en:
 
     contact:
       makeapplication: "Make application"
-      admin: "Admin"
+      account: "Account"
       applications: "Applications"
       home: "Home"
       about: "About"
@@ -92,13 +92,29 @@ en:
       back: "Back"
       signup: "Sign Up"        
 
-    acc:
-      admin: "Admin"
+    loginadmin:
+      signin: "Admin"
+      name: "Name"
+      password: "Password"
+      bsignin: "Sign In"
+      menu: "Menu"
+
+    admin:
+      account: "Administator"
       hello: "Hello,"
-      logout: "LogOut"
+      logout: "Log Out"
       applic: "Applications"
       menu: "Menu"
-      allusers: "Admins"
+      users: "Users"
+      admins: "Admins"  
+    
+    acc:
+      account: "Account"
+      hello: "Hello,"
+      create: "Create application"
+      logout: "Log Out"
+      applic: "Applications"
+      menu: "Menu"
 
   users:
     new:
@@ -107,7 +123,7 @@ en:
 
     index:
       email: "Email"
-      users: "Admins"
+      users: "Users"
       password: "Password"  
       back: "Back"
       edit: "Edit"
@@ -162,4 +178,29 @@ en:
       arrival: "Arrival"
       departure: "Departure"
       accept: "Accept"
-      back: "Back"      
+      back: "Back"
+
+  admins:
+    new:
+      back: "Back"
+      new: "Registration"  
+
+    index:
+      name: "Name"
+      admins: "Admins"
+      password: "Password"
+      key: "Key"
+      back: "Back"
+      edit: "Edit"
+      destroy: "Delete"
+      sure: "Are you sure?"
+
+    edit:
+      edit: "Editing"    
+      back: "Back"
+
+    show:
+      back: "Back"
+      password: "Password:"
+      name: "Name:"  
+      key: "Key:"         

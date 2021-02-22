@@ -2,7 +2,11 @@
 
 class ProposalsController < ApplicationController
   before_action :set_proposal, only: %i[show edit update destroy]
-  skip_before_action :require_login, only: [:index]
+
+  skip_before_action :require_admin_login, only: %i[create new index]
+
+  before_action :require_login, only: %i[new create]
+
   # GET /proposals
   # GET /proposals.json
   def index

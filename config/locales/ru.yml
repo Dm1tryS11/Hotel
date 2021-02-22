@@ -44,7 +44,7 @@ ru:
   session:
     index:
       makeapplication: "Создать заявку"
-      admin: "Админ"
+      account: "Кабинет"
       applications: "Заявки"
       home: "Главная"
       about: "О нас"
@@ -67,7 +67,7 @@ ru:
 
     rooms:
       makeapplication: "Создать заявку"
-      admin: "Админ"
+      account: "Кабинет"
       applications: "Заявки"
       home: "Главная"
       about: "О нас"
@@ -86,7 +86,7 @@ ru:
 
     aboutus:
       makeapplication: "Создать заявку"
-      admin: "Админ"
+      account: "Кабинет"
       applications: "Заявки"
       home: "Главная"
       about: "О нас"
@@ -101,9 +101,16 @@ ru:
               центр, мультифункциональный зал, спортивные сооружения, боулинг, магазины, детский клуб, салон красоты, подземный гараж и внешняя автостоянка, все это превращает Сансет Ризорт в изысканный курорт с необходимыми удобствами для первоклассного отдыха."
       info2: "Добро пожаловать в Europa Hotel, и мы надеемся, что Вы унесете с собой воспоминание, которым сможете поделиться с другими."
 
+    loginadmin:
+      signin: "Администратор"
+      name: "Имя"
+      password: "Пароль"
+      bsignin: "Войти"
+      menu: "Меню"
+    
     contact:
       makeapplication: "Создать заявку"
-      admin: "Админ"
+      account: "Кабинет"
       applications: "Заявки"
       home: "Главная"
       about: "О нас"
@@ -118,13 +125,22 @@ ru:
       back: "Назад"
       signup: "Зарегистрироваться"
 
-    acc:
-      admin: "Администратор"
+    admin:
+      account: "Администратор"
       hello: "Привет,"
       logout: "Выйти"
       applic: "Заявки"
       menu: "Меню"
-      allusers: "Администраторы"
+      users: "Пользователи"
+      admins: "Админы" 
+
+    acc:
+      account: "Личный кабинет"
+      hello: "Привет,"
+      create: "Cоздать заявку"
+      logout: "Выйти"
+      applic: "Заявки"
+      menu: "Меню"
 
   users:
     new:
@@ -133,7 +149,7 @@ ru:
     
     index:
       email: "Почта"
-      users: "Администраторы"
+      users: "Пользователи"
       password: "Пароль"
       back: "Назад"
       edit: "Редактировать"
@@ -189,3 +205,28 @@ ru:
       departure: "Выезд"
       accept: "Подтверждение"
       back: "Назад"
+
+  admins:
+    new:
+      back: "Назад"
+      new: "Регистрация"
+    
+    index:
+      name: "Почта"
+      admins: "Администраторы"
+      password: "Пароль"
+      key: "Ключ"
+      back: "Назад"
+      edit: "Редактировать"
+      destroy: "Удалить"
+      sure: "Вы уверены?"
+  
+    edit:
+      edit: "Редактирование"    
+      back: "Назад"
+
+    show:
+      back: "Назад"
+      password: "Пароль:"
+      name: "Имя:" 
+      key: "Ключ:"
