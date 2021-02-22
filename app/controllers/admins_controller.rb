@@ -1,4 +1,4 @@
-class AdminsController < ApplicationController
+class AdminsController < ApplicationController #1
   before_action :set_admin, only: [:show, :edit, :update, :destroy]
 
   skip_before_action :require_admin_login, only: %i[create new]
